@@ -30,5 +30,10 @@ switch($action){
 		$dateModif =  dateAnglaisVersFrancais($dateModif);
 		include("vues/v_etatFrais.php");
 	}
+        
+	default :{
+		include("vues/v_accueil.php");
+		break;
+	}
 }
 ?>
