@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 3.4.10.1
+- http://www.phpmyadmin.net
+-
+- Client: localhost
+- Généré le : Mar 14 Mai 2013 à 11:34
+- Version du serveur: 5.5.20
+- Version de PHP: 5.3.10
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="frais" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="utilisateur">
+                CREATE TABLE `utilisateur` (
+                  `id` char(4) NOT NULL,
+                  `nom` char(30) DEFAULT NULL,
+                  `prenom` char(30) DEFAULT NULL,
+                  `login` char(20) DEFAULT NULL,
+                  `mdp` char(50) DEFAULT NULL,
+                  `adresse` char(30) DEFAULT NULL,
+                  `cp` char(5) DEFAULT NULL,
+                  `ville` char(30) DEFAULT NULL,
+                  `dateEmbauche` date DEFAULT NULL,
+                  `idProfil` int(11) NOT NULL,
+                  PRIMARY KEY (`id`),
+                  KEY `idProfil` (`idProfil`),
+                  CONSTRAINT `utilisateur_ibfk_1` FOREIGN KEY (`idProfil`) REFERENCES `profil` (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Base de données: 'frais'
+    -->
+    <database name="frais">
+        <!-- Table utilisateur -->
+        <table name="utilisateur">
+            <column name="id"></column>
+            <column name="nom">laleau</column>
+            <column name="prenom">Aymeric</column>
+            <column name="login">Aymeric</column>
+            <column name="mdp">1234</column>
+            <column name="adresse">NULL</column>
+            <column name="cp">NULL</column>
+            <column name="ville">NULL</column>
+            <column name="dateEmbauche">NULL</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">a131</column>
+            <column name="nom">Villechalane</column>
+            <column name="prenom">Louis</column>
+            <column name="login">lvillachane</column>
+            <column name="mdp">92eb980737f1854076b2</column>
+            <column name="adresse">8 rue des Charmes</column>
+            <column name="cp">46000</column>
+            <column name="ville">Cahors</column>
+            <column name="dateEmbauche">2005-12-21</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">a17</column>
+            <column name="nom">Andre</column>
+            <column name="prenom">David</column>
+            <column name="login">dandre</column>
+            <column name="mdp">37f2381c9a729782c38410b1ea5b8191</column>
+            <column name="adresse">1 rue Petit</column>
+            <column name="cp">46200</column>
+            <column name="ville">Lalbenque</column>
+            <column name="dateEmbauche">1998-11-23</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">a55</column>
+            <column name="nom">Bedos</column>
+            <column name="prenom">Christian</column>
+            <column name="login">cbedos</column>
+            <column name="mdp">gmhxd</column>
+            <column name="adresse">1 rue Peranud</column>
+            <column name="cp">46250</column>
+            <column name="ville">Montcuq</column>
+            <column name="dateEmbauche">1995-01-12</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">a93</column>
+            <column name="nom">Tusseau</column>
+            <column name="prenom">Louis</column>
+            <column name="login">ltusseau</column>
+            <column name="mdp">ktp3s</column>
+            <column name="adresse">22 rue des Ternes</column>
+            <column name="cp">46123</column>
+            <column name="ville">Gramat</column>
+            <column name="dateEmbauche">2000-05-01</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">b13</column>
+            <column name="nom">Bentot</column>
+            <column name="prenom">Pascal</column>
+            <column name="login">pbentot</column>
+            <column name="mdp">doyw1</column>
+            <column name="adresse">11 allée des Cerises</column>
+            <column name="cp">46512</column>
+            <column name="ville">Bessines</column>
+            <column name="dateEmbauche">1992-07-09</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">b16</column>
+            <column name="nom">Bioret</column>
+            <column name="prenom">Luc</column>
+            <column name="login">lbioret</column>
+            <column name="mdp">hrjfs</column>
+            <column name="adresse">1 Avenue gambetta</column>
+            <column name="cp">46000</column>
+            <column name="ville">Cahors</column>
+            <column name="dateEmbauche">1998-05-11</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">b19</column>
+            <column name="nom">Bunisset</column>
+            <column name="prenom">Francis</column>
+            <column name="login">fbunisset</column>
+            <column name="mdp">4vbnd</column>
+            <column name="adresse">10 rue des Perles</column>
+            <column name="cp">93100</column>
+            <column name="ville">Montreuil</column>
+            <column name="dateEmbauche">1987-10-21</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">b25</column>
+            <column name="nom">Bunisset</column>
+            <column name="prenom">Denise</column>
+            <column name="login">dbunisset</column>
+            <column name="mdp">s1y1r</column>
+            <column name="adresse">23 rue Manin</column>
+            <column name="cp">75019</column>
+            <column name="ville">paris</column>
+            <column name="dateEmbauche">2010-12-05</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">b28</column>
+            <column name="nom">Cacheux</column>
+            <column name="prenom">Bernard</column>
+            <column name="login">bcacheux</column>
+            <column name="mdp">uf7r3</column>
+            <column name="adresse">114 rue Blanche</column>
+            <column name="cp">75017</column>
+            <column name="ville">Paris</column>
+            <column name="dateEmbauche">2009-11-12</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">b34</column>
+            <column name="nom">Cadic</column>
+            <column name="prenom">Eric</column>
+            <column name="login">ecadic</column>
+            <column name="mdp">6u8dc</column>
+            <column name="adresse">123 avenue de la République</column>
+            <column name="cp">75011</column>
+            <column name="ville">Paris</column>
+            <column name="dateEmbauche">2008-09-23</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">b4</column>
+            <column name="nom">Charoze</column>
+            <column name="prenom">Catherine</column>
+            <column name="login">ccharoze</column>
+            <column name="mdp">u817o</column>
+            <column name="adresse">100 rue Petit</column>
+            <column name="cp">75019</column>
+            <column name="ville">Paris</column>
+            <column name="dateEmbauche">2005-11-12</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">b50</column>
+            <column name="nom">Clepkens</column>
+            <column name="prenom">Christophe</column>
+            <column name="login">cclepkens</column>
+            <column name="mdp">bw1us</column>
+            <column name="adresse">12 allée des Anges</column>
+            <column name="cp">93230</column>
+            <column name="ville">Romainville</column>
+            <column name="dateEmbauche">2003-08-11</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">b59</column>
+            <column name="nom">Cottin</column>
+            <column name="prenom">Vincenne</column>
+            <column name="login">vcottin</column>
+            <column name="mdp">2hoh9</column>
+            <column name="adresse">36 rue Des Roches</column>
+            <column name="cp">93100</column>
+            <column name="ville">Monteuil</column>
+            <column name="dateEmbauche">2001-11-18</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">c14</column>
+            <column name="nom">Daburon</column>
+            <column name="prenom">François</column>
+            <column name="login">fdaburon</column>
+            <column name="mdp">7oqpv</column>
+            <column name="adresse">13 rue de Chanzy</column>
+            <column name="cp">94000</column>
+            <column name="ville">Créteil</column>
+            <column name="dateEmbauche">2002-02-11</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">c3</column>
+            <column name="nom">De</column>
+            <column name="prenom">Philippe</column>
+            <column name="login">pde</column>
+            <column name="mdp">gk9kx</column>
+            <column name="adresse">13 rue Barthes</column>
+            <column name="cp">94000</column>
+            <column name="ville">Créteil</column>
+            <column name="dateEmbauche">2010-12-14</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">c54</column>
+            <column name="nom">Debelle</column>
+            <column name="prenom">Michel</column>
+            <column name="login">mdebelle</column>
+            <column name="mdp">od5rt</column>
+            <column name="adresse">181 avenue Barbusse</column>
+            <column name="cp">93210</column>
+            <column name="ville">Rosny</column>
+            <column name="dateEmbauche">2006-11-23</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">d13</column>
+            <column name="nom">Debelle</column>
+            <column name="prenom">Jeanne</column>
+            <column name="login">jdebelle</column>
+            <column name="mdp">nvwqq</column>
+            <column name="adresse">134 allée des Joncs</column>
+            <column name="cp">44000</column>
+            <column name="ville">Nantes</column>
+            <column name="dateEmbauche">2000-05-11</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">d51</column>
+            <column name="nom">Debroise</column>
+            <column name="prenom">Michel</column>
+            <column name="login">mdebroise</column>
+            <column name="mdp">sghkb</column>
+            <column name="adresse">2 Bld Jourdain</column>
+            <column name="cp">44000</column>
+            <column name="ville">Nantes</column>
+            <column name="dateEmbauche">2001-04-17</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">e22</column>
+            <column name="nom">Desmarquest</column>
+            <column name="prenom">Nathalie</column>
+            <column name="login">ndesmarquest</column>
+            <column name="mdp">f1fob</column>
+            <column name="adresse">14 Place d Arc</column>
+            <column name="cp">45000</column>
+            <column name="ville">Orléans</column>
+            <column name="dateEmbauche">2005-11-12</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">e24</column>
+            <column name="nom">Desnost</column>
+            <column name="prenom">Pierre</column>
+            <column name="login">pdesnost</column>
+            <column name="mdp">4k2o5</column>
+            <column name="adresse">16 avenue des Cèdres</column>
+            <column name="cp">23200</column>
+            <column name="ville">Guéret</column>
+            <column name="dateEmbauche">2001-02-05</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">e39</column>
+            <column name="nom">Dudouit</column>
+            <column name="prenom">Frédéric</column>
+            <column name="login">fdudouit</column>
+            <column name="mdp">44im8</column>
+            <column name="adresse">18 rue de l église</column>
+            <column name="cp">23120</column>
+            <column name="ville">GrandBourg</column>
+            <column name="dateEmbauche">2000-08-01</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">e49</column>
+            <column name="nom">Duncombe</column>
+            <column name="prenom">Claude</column>
+            <column name="login">cduncombe</column>
+            <column name="mdp">qf77j</column>
+            <column name="adresse">19 rue de la tour</column>
+            <column name="cp">23100</column>
+            <column name="ville">La souteraine</column>
+            <column name="dateEmbauche">1987-10-10</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">e5</column>
+            <column name="nom">Enault-Pascreau</column>
+            <column name="prenom">Céline</column>
+            <column name="login">cenault</column>
+            <column name="mdp">y2qdu</column>
+            <column name="adresse">25 place de la gare</column>
+            <column name="cp">23200</column>
+            <column name="ville">Gueret</column>
+            <column name="dateEmbauche">1995-09-01</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">e52</column>
+            <column name="nom">Eynde</column>
+            <column name="prenom">Valérie</column>
+            <column name="login">veynde</column>
+            <column name="mdp">i7sn3</column>
+            <column name="adresse">3 Grand Place</column>
+            <column name="cp">13015</column>
+            <column name="ville">Marseille</column>
+            <column name="dateEmbauche">1999-11-01</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">f21</column>
+            <column name="nom">Finck</column>
+            <column name="prenom">Jacques</column>
+            <column name="login">jfinck</column>
+            <column name="mdp">mpb3t</column>
+            <column name="adresse">10 avenue du Prado</column>
+            <column name="cp">13002</column>
+            <column name="ville">Marseille</column>
+            <column name="dateEmbauche">2001-11-10</column>
+            <column name="idProfil">1</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">f39</column>
+            <column name="nom">Frémont</column>
+            <column name="prenom">Fernande</column>
+            <column name="login">ffremont</column>
+            <column name="mdp">xs5tq</column>
+            <column name="adresse">4 route de la mer</column>
+            <column name="cp">13012</column>
+            <column name="ville">Allauh</column>
+            <column name="dateEmbauche">1998-10-01</column>
+            <column name="idProfil">2</column>
+        </table>
+        <table name="utilisateur">
+            <column name="id">f4</column>
+            <column name="nom">Gest</column>
+            <column name="prenom">Alain</column>
+            <column name="login">agest</column>
+            <column name="mdp">dywvt</column>
+            <column name="adresse">30 avenue de la mer</column>
+            <column name="cp">13025</column>
+            <column name="ville">Berre</column>
+            <column name="dateEmbauche">1985-11-01</column>
+            <column name="idProfil">1</column>
+        </table>
+    </database>
+</pma_xml_export>
