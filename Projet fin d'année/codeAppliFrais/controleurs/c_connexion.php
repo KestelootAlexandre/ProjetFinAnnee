@@ -31,7 +31,8 @@ switch($action){
 			$id = $visiteur['id'];
 			$nom =  $visiteur['nom'];
 			$prenom = $visiteur['prenom'];
-			connecter($id,$nom,$prenom);
+			$idProfil=$visiteur['idProfil'];
+			connecter($id,$nom,$prenom,$idProfil);
 			include("vues/v_sommaire.php");
 		}
 		break;

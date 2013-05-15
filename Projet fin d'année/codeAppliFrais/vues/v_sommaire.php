@@ -9,8 +9,25 @@
       </div>  
         <ul id="menuList">
 			<li >
-				  Visiteur :<br>
-				<?php echo $_SESSION['prenom']."  ".$_SESSION['nom']  ?>
+				 <?php
+                              
+                              $login=$_SESSION['prenom'];
+                              $mdp=$_SESSION['nom'];
+                              
+                              
+                             if($idProfil==1)
+                             {
+                                 echo'comptable :<br>';
+                                 echo $_SESSION['prenom']."  ".$_SESSION['nom'] ;
+                             }
+                             else
+                             {
+                                 echo'visiteur :<br>';
+                                 echo $_SESSION['prenom']."  ".$_SESSION['nom'] ;
+                                 
+                             }
+		             
+                             ?>
 			</li>
            <li class="smenu">
               <a href="index.php?uc=gererFrais&action=saisirFrais" title="Saisie fiche de frais ">Saisie fiche de frais</a>
