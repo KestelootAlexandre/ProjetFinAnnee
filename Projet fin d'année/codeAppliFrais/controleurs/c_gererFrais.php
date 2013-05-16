@@ -4,6 +4,8 @@ $idVisiteur = $_SESSION['idVisiteur'];
 $mois = getMois(date("d/m/Y"));
 $numAnnee =substr( $mois,0,4);
 $numMois =substr( $mois,4,2);
+$nomMois=array('','Janvier','Fevrier','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Decembre');
+$dateMois=$nomMois[date("n")];
 $action = $_REQUEST['action'];
 switch($action){
 	case 'saisirFrais':{
