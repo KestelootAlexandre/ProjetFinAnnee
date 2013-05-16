@@ -13,6 +13,7 @@
                               
                               $login=$_SESSION['prenom'];
                               $mdp=$_SESSION['nom'];
+							  $idProfil=$_SESSION['idProfil'];
                               
                               
                              if($idProfil==1)

@@ -1,5 +1,6 @@
 <?php
 echo"
+<div id='contenu'>
 <h3>Ajouter un nouveau frais hors forfait</h3>
 <form method='POST' action='index.php?uc=gererFrais&action=validerCreationFrais'>
 <table class='tabNonQuadrille'>

@@ -10,8 +10,19 @@ switch($action){
 		if($pdo->estPremierFraisMois($idVisiteur,$mois)){
 			$pdo->creeNouvellesLignesFrais($idVisiteur,$mois);
 		}
+		$lesFraisHorsForfait = $pdo->getLesFraisHorsForfait($idVisiteur,$mois);
+        $lesFraisForfait= $pdo->getLesFraisForfait($idVisiteur,$mois);
+        include("vues/v_listeFraisForfait.php");
 		break;
 	}
+	case 'saisirFraishorsForfait':{
+		if($pdo->estPremierFraisMois($idVisiteur,$mois)){
+			$pdo->creeNouvellesLignesFrais($idVisiteur,$mois);
+                        //include'vues\v_ajoutFrais';
+                        include("vues/v_listeFraisHorsForfait.php");
+		}
+		break;
+		
 	case 'validerMajFraisForfait':{
 		$lesFrais = $_REQUEST['lesFrais'];
 		if(lesQteFraisValides($lesFrais)){
@@ -47,9 +58,6 @@ switch($action){
 		break;
 	}
 }
-$lesFraisHorsForfait = $pdo->getLesFraisHorsForfait($idVisiteur,$mois);
-$lesFraisForfait= $pdo->getLesFraisForfait($idVisiteur,$mois);
-include("vues/v_listeFraisForfait.php");
-include("vues/v_listeFraisHorsForfait.php");
+
 
 ?>
